@@ -1,0 +1,93 @@
+
+{ /*
+    import { useState, type FormEvent, type ChangeEvent } from "react";
+import { registerUser } from "../services/api";
+
+interface CreateUserProps {
+    onClose: () => void;
+}
+
+const CreateUser: React.FC<CreateUserProps> = ({ onClose }) => {
+    const [name, setName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [loading, setLoading] = useState<boolean>(false);
+
+    const validateEmail = (email: string): boolean => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    };
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        setLoading(true);
+        try {
+            await registerUser({ name, email, password });
+            onClose();
+        } catch (error: any) {
+            console.error("Error:", error);
+            alert(error.response?.data?.message || "Error creating user");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <div className="main">
+            <div className="submain">
+                <h3 className="crt1">Create New User</h3>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        value={name}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
+                        className="txt"
+                        required
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+                        className="eml"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+                        className="psd"
+                        required
+                    />
+                    <div className="btn">
+                        <button 
+                            type="button" 
+                            onClick={onClose} 
+                            className="btn1"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            type="submit"
+                            className="subn"
+                            disabled={loading}
+                        >
+                            {loading ? "Creating..." : "Create"}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+};
+
+export default CreateUser;
+*/}

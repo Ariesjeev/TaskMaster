@@ -1,0 +1,14 @@
+@API_HostAddress = https://localhost:7228
+
+GET {{API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+@search=string
+@status=string
+@category=string
+@sortBy=string
+GET {{API_HostAddress}}/api/projects?search={{search}}&status={{status}}&category={{category}}&sortBy={{sortBy}}
+
+###
