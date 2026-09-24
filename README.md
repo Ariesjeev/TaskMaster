@@ -1,39 +1,79 @@
-# TaskMaster
+<div align="center">
 
-TaskMaster is a task management application designed to help users organize, track, and complete work efficiently.
+# 🌐 SnapClass: AI-powered attendance system
 
-## Overview
+### The marketing and walkthrough site for the SnapClass AI attendance system
 
-This repository contains the source code for the TaskMaster project, including the application logic, frontend, and supporting configuration files.
+[**Live Site**](https://snapclass-frontend-beryl.vercel.app/) · [**Launch the App**](https://snapclasses-ai.streamlit.app/) · [**Main App Repo**](https://github.com/Ariesjeev/snapclass)
 
-## Features
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
 
-- Task creation and tracking
-- Project organization
-- Progress visibility
-- A web-based interface for managing tasks
+</div>
 
-## Project Structure
+---
 
-- `frontend/` – frontend application code
-- `src/` – backend or shared application logic (if present)
-- `README.md` – project overview and usage information
+## 📖 Overview
 
-## Getting Started
+This is the public-facing landing page for **SnapClass**, an AI-powered attendance system that uses face recognition and voice biometrics. It explains what the product does, walks through the teacher and student journeys with screenshots, shows the tech stack, and sends visitors straight into the live Streamlit app.
 
-1. Clone the repository.
-2. Install the required dependencies for the project.
-3. Run the app using the project’s local development commands.
-4. Open the application in your browser to begin managing tasks.
+The attendance engine itself lives in the [main SnapClass repo](https://github.com/Ariesjeev/snapclass). This repo is only the Flask-served front door.
 
-## Development
+## ✨ What's on the Page
 
-Use the project’s provided scripts and configuration to build, run, and test the application locally.
+- **Hero section** with a one-click *Start AI Attendance* button
+- **Innovative features**: AI face analysis, sequential voice ID, QR-driven roster
+- **The Teacher's Journey** (6 steps): secure login → dashboard → course management → FaceID attendance → Voice ID attendance → records
+- **The Student's Journey** (3 phases): instant enrollment → biometric registration → personal dashboard
+- **Advanced tech stack** overview
+- Responsive navigation with anchors for Home, Features, Journey and Tech Stack
 
-## Contributing
+## 🧰 Tech Stack
 
-Contributions are welcome. Please keep code clean, document changes clearly, and ensure the project remains consistent with the repository’s standards.
+| Layer | Tools |
+|---|---|
+| Server | Flask (Python) |
+| Templating | Jinja2 (`templates/`) |
+| Assets | HTML, CSS, JS, product screenshots (`static/`) |
+| Hosting | Vercel |
 
-## License
+## 📁 Project Structure
 
-This project may include licensing details in other files. Please review repository files for the applicable license before publishing or distributing the project.
+```
+snapclass-frontend/
+├── app.py             # Flask app serving the landing page
+├── requirements.txt
+├── templates/         # index.html
+└── static/            # CSS, JS, images and demo screenshots
+```
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/Ariesjeev/snapclass-frontend.git
+cd snapclass-frontend
+
+python -m venv venv
+source venv/bin/activate        # Windows: .venv\Scripts\activate
+
+pip install -r requirements.txt
+python app.py
+```
+
+Then open `http://localhost:5002`.
+
+## ☁️ Deployment
+
+The site is deployed on **Vercel**. Pushing to `main` triggers a new deployment.
+
+## 🔗 Related
+
+- 🧠 **SnapClass app (Streamlit):** [github.com/Ariesjeev/snapclass](https://github.com/Ariesjeev/snapclass)
+- 🚀 **Live app:** [snapclasses-ai.streamlit.app](https://snapclasses-ai.streamlit.app/)
+
+## 👤 Author
+
+**Jeevan Bikash Sahoo**: Full Stack Developer & AI Engineer  
+GitHub: [@Ariesjeev](https://github.com/Ariesjeev)
